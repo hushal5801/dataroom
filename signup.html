@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<title xmlns:C="http://www.w3.org/1999/xhtml">DATAROOM TM </title>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body{
+            background-image: url(frontbg.png);
+            background-clip: border-box;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="side-info">
+    <p>
+        The Data-Room application is a unique financial data monitoring system <br>
+        <br>
+        that can be integrated with any legacy systems like the SAPs, Oracle, Tally etc.
+        <br>
+
+        <br>to collate, analyze and visualize data within minutes.<br>
+        <br>
+
+        Massive data sets are collated into groups that are stored in big data format and <br>
+
+        <br>
+        represented to stakeholders and specific industry users in uncluttered and easy to understand formats.<br>
+        <br>
+        The system with its in built ML tools can help users make critical decisions, support available data,<br>
+        <br>
+        identify discrepancies in the data and make smart predictions about financial health<br>
+
+    </p>
+</div>
+
+
+
+<div class="main-div">
+    <h3>DATAROOM WEB LOGIN</h3>
+    <label for=" FULL NAME"></label><input type="text" placeholder="FULL NAME...." id=" FULL NAME" />
+    <label for="Phone no."></label><input type="number" placeholder="PHONE....." id="Phone no." />
+    <label for="email_field"></label><input type="email" placeholder="E-mail...." id="email_field" />
+    <label for="password_field"></label><input type="password" placeholder="Password...." id="password_field" />
+    <label for="reenter_password"></label><input type="password" placeholder="RE-ENTER Password...." id="reenter_password" />
+
+    <button onclick="Signup()">Sign UP to account</button>
+    <button onclick="login()">Login to account</button>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-login_uri="https://your.domain/your_login_endpoint"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+
+</div>
+<!--<div class="LoggedIN-div">
+    <h3>Welcome User</h3>
+    <p>Welcome to DATAROOM LOGIN</p>
+    <button>LOGOUT</button>
+
+</div>-->
+<script>
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyC0uwUpfJCp1HM7RCQBRcWZ7gLbLe87smU",
+        authDomain: "dataroompro.firebaseapp.com",
+        projectId: "dataroompro",
+        storageBucket: "dataroompro.appspot.com",
+        messagingSenderId: "248257776609",
+        appId: "1:248257776609:web:4f07cbc6627f208dcb60a0",
+        measurementId: "G-NQ3SMQVNJJ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+<script src="index.js"></script>
+</body>
